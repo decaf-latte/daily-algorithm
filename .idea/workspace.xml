@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57ca5edc-e41b-4214-a8bd-b20735cda293" name="Changes" comment="221109">
-      <change afterPath="$PROJECT_DIR$/src/Programmers/배열뒤집기/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Programmers/최대값만들기1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Programmers/피자나눠먹기/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Programmers/피자나눠먹기2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Programmers/피자나눠먹기3/Main.java" afterDir="false" />
+    <list default="true" id="57ca5edc-e41b-4214-a8bd-b20735cda293" name="Changes" comment="221110">
+      <change afterPath="$PROJECT_DIR$/src/Programmers/문자열뒤집기/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/배열원소의길이/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/아이스아메리카노/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/옷가게할인받기/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/점의위치구하기/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Programmers/편지/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,30 +39,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Programmers.배열원소의길이" />
+      <recent name="Programmers.편지" />
+      <recent name="Programmers.문자열뒤집기" />
+      <recent name="Programmers.아이스아메리카노" />
       <recent name="Programmers.배열뒤집기" />
-      <recent name="Programmers.피자나눠먹기3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.최대값만들기1.Main" />
+  <component name="RunManager">
+    <configuration name="Programmers.아이스아메리카노.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.아이스아메리카노.Main" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programmers.최대값만들기1.*" />
+          <option name="PATTERN" value="Programmers.아이스아메리카노.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Programmers.피자나눠먹기2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.피자나눠먹기2.Main" />
+    <configuration name="Programmers.옷가게할인받기.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.옷가게할인받기.Main" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programmers.피자나눠먹기2.*" />
+          <option name="PATTERN" value="Programmers.옷가게할인받기.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Programmers.피자나눠먹기3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.피자나눠먹기3.Main" />
+    <configuration name="Programmers.점의위치구하기.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.점의위치구하기.Main" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programmers.피자나눠먹기3.*" />
+          <option name="PATTERN" value="Programmers.점의위치구하기.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +99,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Programmers.피자나눠먹기.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Programmers.피자나눠먹기.Main" />
+    <configuration name="Programmers.편지.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.편지.Main" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Programmers.피자나눠먹기.*" />
+          <option name="PATTERN" value="Programmers.편지.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Programmers.배열원소의길이.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programmers.배열원소의길이.Main" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Programmers.배열원소의길이.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Programmers.배열뒤집기.Main" />
-        <item itemvalue="Application.Programmers.피자나눠먹기3.Main" />
-        <item itemvalue="Application.Programmers.피자나눠먹기2.Main" />
-        <item itemvalue="Application.Programmers.피자나눠먹기.Main" />
+        <item itemvalue="Application.Programmers.아이스아메리카노.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +152,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667963237576</updated>
-      <workItem from="1667963239251" duration="12008000" />
+      <workItem from="1667963239251" duration="12393000" />
+      <workItem from="1668131371915" duration="4492000" />
     </task>
     <task id="LOCAL-00001" summary="221109">
       <created>1667969921716</created>
@@ -148,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667969921716</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="221110">
+      <created>1668049461057</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668049461058</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +188,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="221109" />
-    <option name="LAST_COMMIT_MESSAGE" value="221109" />
+    <MESSAGE value="221110" />
+    <option name="LAST_COMMIT_MESSAGE" value="221110" />
   </component>
 </project>
