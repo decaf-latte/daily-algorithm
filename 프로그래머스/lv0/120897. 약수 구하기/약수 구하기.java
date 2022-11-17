@@ -1,23 +1,14 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 class Solution {
     public int[] solution(int n) {
-        int[] arry = new int[10000];
-    int index =0;
-
-    for(int i = 1; i<=n; i++) {
-      if(n%i ==0) {
-        arry[index] = i;
-        index++;
+         List<Integer> ans = new ArrayList<>();
+    for(int i = 1 ; i <= n ; i ++){
+      if ( n % i == 0){
+        ans.add(i);
       }
     }
-    int[] answer = new int [index];
-    for(int i = 0; i<index; i++) {
-      if(arry[i] != 0) {
-        answer[i] = arry[i];
-
+    return ans.stream().mapToInt(x->x).toArray();
       }
     }
-
-
-    return answer;
-    }
-}
