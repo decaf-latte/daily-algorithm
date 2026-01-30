@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+class Main {
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+
+		// 1. 첫째줄에 공백으로 구분된 단어들 입력
+		int result = st.countTokens();
+
+		//2. 동일한 단어가 등장할 경우 등장한 횟수만큼 세어줌
+		
+		System.out.println(result);
+	}
+}
