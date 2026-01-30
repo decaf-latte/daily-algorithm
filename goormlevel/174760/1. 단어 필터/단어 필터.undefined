@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+class Main {
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		//1. 첫째줄 > 단어의 길이, 메세지의 길이
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int wordLength = Integer.parseInt(st.nextToken());
+		int msgLEngth = Integer.parseInt(st.nextToken());
+
+		//2. 둘째줄 > 단어 
+		String word = br.readLine();
+
+		//3. 셋째줄 > 메세지
+		String msg = br.readLine();
+
+		// 결과를 담을 그릇
+		StringBuilder sb = new StringBuilder(msg);
+
+		//4. 메세지에 단어가 있으면 replace하기
+		//sb.append(msg.replace(word,""));
+
+		// 단어가 완전히 없어질떄까지 진행
+		while (sb.indexOf(word) != -1){
+			int start = sb.indexOf(word);
+			sb.delete(start, start+word.length());
+		}
+
+		if(sb.length() == 0){
+			sb.append("EMPTY");
+		}
+
+		//5. 예외처리
+		System.out.println(sb);
+	}
+}
