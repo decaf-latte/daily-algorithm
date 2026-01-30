@@ -1,0 +1,44 @@
+import java.io.*;
+import java.util.*;
+class Main {
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		// 1. 첫째 줄 > 구름이와 바람이가 가지고 있는 식량의 양
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		if (!st.hasMoreTokens()) return;
+
+		// 구름이
+		int gooreum = Integer.parseInt(st.nextToken());
+		int baram = Integer.parseInt(st.nextToken());
+		
+		// 2. D번째 날
+		// D 읽기 (두 번째 줄로 새로 읽기)
+		st = new StringTokenizer(br.readLine());
+		int day = Integer.parseInt(st.nextToken());
+		
+		// 3. 최종 값 (구름이, 바람이 각각)
+		StringBuilder result = new StringBuilder();
+
+		//4. 반복문 돌면서 값을 더해줌
+		for (int i = 1; i <= day; i++) {
+
+			// 홀수날 : 구름이의 1/2 을 바람이에게 더해주기
+			if (i % 2 != 0){
+				int g = (gooreum+1)/2;
+				baram += g;
+				gooreum -= g;
+			}else{ // 짝수날 : 바람이의 1/2을 구름이에게 더해주기
+				int b = (baram+1)/2;
+				gooreum += b;
+				baram -= b;
+			}
+		}
+		
+		result.append(gooreum);
+		result.append(" ");
+		result.append(baram);
+
+		System.out.println(result);
+	}
+}
