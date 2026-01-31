@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+class Main {
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		//1.첫쨰줄 n = 행사의 갯수
+		int n = Integer.parseInt(br.readLine());
+
+		//2. n 개의 행사 시간 을 2차원 배열에 저장
+		int[][] events = new int[n][2];
+		for (int i=0; i <n; i++){
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			// 시작시간
+			events[i][0] = Integer.parseInt(st.nextToken());
+			// 종료시간
+			events[i][1] = Integer.parseInt(st.nextToken());
+
+		}
+
+		//3. 종료시간 기준으로 오름차순 정렬
+		Arrays.sort(events, (a,b) -> {
+			// 종료시간이 같으면 시작 시간 기준
+			if(a[1] == b[1]) return a[0] - b[0];
+			return a[1]-b[1];
+		});
+
+		int count = 0;
+		int lastEndTime = -1;
+
+		//4. 반복문 돌면서 가능한 행사 세기
+
+		for (int i = 0; i <n; i++){
+		// 조건 = 현재 행사 시작 시간 >= 이전 행사 종료 시간 +1
+			if (lastEndTime ==-1 || events[i][0] >= lastEndTime +1 ){
+				count ++;
+				lastEndTime = events[i][1];
+			}
+			
+		}
+
+		System.out.println(count);
+	}
+}
