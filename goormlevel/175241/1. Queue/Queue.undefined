@@ -1,0 +1,47 @@
+import java.io.*;
+import java.util.*;
+class Main {
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		//1. 첫째줄 > 명령의 수n개, 큐의크기 k 
+		StringTokenizer st = new StringTokenizer(br.readLine());
+
+		int n = Integer.parseInt(st.nextToken());
+		int k = Integer.parseInt(st.nextToken());
+
+		// 2. Queue 자료구조 생성 (FIFO 원칙)
+		Queue<Integer> queue = new LinkedList<>();
+		
+		// 최종 결과
+		StringBuilder sb = new StringBuilder();
+		
+		//3. n 개의 명령문을 수행 반복문 안에서 수행
+		for(int i=0; i<n; i++){
+			st = new StringTokenizer(br.readLine());
+			String cmd = st.nextToken();
+			
+			if (cmd.equals("push")) { 
+					int value = Integer.parseInt(st.nextToken());
+				
+					// 큐가 가득 찼는지 확인 (K 크기 제한)
+					if (queue.size() < k) {
+							queue.add(value);
+					} else {
+							sb.append("Overflow\n");
+					}
+			} else if (cmd.equals("pop")) {
+					// 큐가 비어있는지 확인
+					if (!queue.isEmpty()) {
+							// 가장 먼저 들어온 데이터 제거 및 출력
+							sb.append(queue.poll()).append("\n");
+					} else {
+							sb.append("Underflow\n");
+					}
+			}
+			
+		}
+		
+		
+		System.out.println(sb);
+	}
+}
