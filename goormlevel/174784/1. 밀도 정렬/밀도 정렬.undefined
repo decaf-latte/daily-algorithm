@@ -1,0 +1,47 @@
+import java.io.*;
+import java.util.*;
+
+class Substance {
+    int id;
+    long w, v;
+    Substance(int id, long w, long v) {
+        this.id = id;
+        this.w = w;
+        this.v = v;
+    }
+}
+
+class Main {
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		//1. 물질의 갯수 n개
+		int n = Integer.parseInt(br.readLine());
+
+		//2. n개의 부피와 무게가 주어짐
+		List<Substance> list = new ArrayList<>();
+		for (int i = 1; i <= n; i++) {
+				StringTokenizer st = new StringTokenizer(br.readLine());
+				long w = Long.parseLong(st.nextToken());
+				long v = Long.parseLong(st.nextToken());
+				list.add(new Substance(i, w, v));
+		}
+
+		// 4. 정렬 로직 구현
+			list.sort((s1, s2) -> {
+					// 조건 1: 밀도 비교 (w1/v1 vs w2/v2 => w1*v2 vs w2*v1)
+					long d1 = s1.w * s2.v;
+					long d2 = s2.w * s1.v;
+					if (d1 != d2) return Long.compare(d2, d1); // 밀도 높은 순
+
+					// 조건 2: 무게 비교
+					if (s1.w != s2.w) return Long.compare(s2.w, s1.w); // 무게 무거운 순
+
+					// 조건 3: 번호 비교
+					return Integer.compare(s1.id, s2.id); // 번호 작은 순
+			});
+
+        // 5. 가장 첫 번째 물질의 번호 출력
+        System.out.println(list.get(0).id);
+		
+	}
+}
